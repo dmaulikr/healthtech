@@ -19,6 +19,16 @@
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    PFUser *currentUser = [PFUser logInWithUsername:@"sonia" password:@"appasamy"];
+    
+    
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Parse Test"
+                                                    message:currentUser.name
+                                                   delegate:nil
+                                          cancelButtonTitle:@"OK"
+                                          otherButtonTitles:nil];
+    [alert show];
 }
 
 - (void)didReceiveMemoryWarning {
