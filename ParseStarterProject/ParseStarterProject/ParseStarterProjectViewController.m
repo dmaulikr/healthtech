@@ -24,7 +24,10 @@
     
     
     UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Parse Test"
-                                                    message:currentUser.name
+                                                    message:currentUser.nam
+                          
+                          
+                          e
                                                    delegate:nil
                                           cancelButtonTitle:@"OK"
                                           otherButtonTitles:nil];
